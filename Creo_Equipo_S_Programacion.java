@@ -27,7 +27,7 @@ public class Creo_Equipo_S_Programacion {
 
 		int numdProgramadores = valorNumProgramadores.ObtenerNumProgramadoresValido();
 
-		EquipoProgramacion equipo = new EquipoProgramacion(nombreEquipo, universidad, lenguajeProgramacion, 0);
+		EquipoProgramacion equipo = new EquipoProgramacion(nombreEquipo, universidad, lenguajeProgramacion, numdProgramadores);
 
 		for (int i = 0; i < numdProgramadores; i++) {
 			System.out.println("Ingrese datos de programador. " + (i + 1) + ":");
@@ -50,6 +50,8 @@ public class Creo_Equipo_S_Programacion {
 
 			}
 		}
+		equipos.add(equipo);
+		System.out.println("Equipo añadido correctamente. ");
 
 	}
 
