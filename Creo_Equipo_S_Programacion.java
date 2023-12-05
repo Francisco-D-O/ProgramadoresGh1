@@ -14,13 +14,17 @@ public class Creo_Equipo_S_Programacion {
 	public void agregarEquipo() throws Exception {
 
 		Scanner teclado = new Scanner(System.in);
+		
 		System.out.println("Introduzca el nombre del equio: ");
+		
 		String nombreEquipo = teclado.nextLine();
 
 		System.out.println("Introduzca el nombre de la Universidad. ");
+		
 		String universidad = teclado.nextLine();
 
 		System.out.println("Introduzca el lenguaje de Programación. ");
+		
 		String lenguajeProgramacion = teclado.nextLine();
 
 		EquipoProgramacion valorNumProgramadores = new EquipoProgramacion(0);
